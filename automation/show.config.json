@@ -1,0 +1,32 @@
+{
+  "_": "Config used by the scheduled automation (Docker on Railway, Render, Fly, etc.). Edit every value below for your show. Same fields as show.config.example.json in the repo root.",
+  "title": "Your Topic Answers by Your Company",
+  "description": "Straight answers about <your subject> from <your company>, serving <your area>.",
+  "author": "Your Company",
+  "email": "you@example.com",
+  "itunesEmail": "podcasts@example.com",
+  "link": "https://example.com/podcast/",
+  "copyright": "Your Company",
+  "categories": [
+    { "text": "Education", "sub": "How To" }
+  ],
+  "feedUrl": "https://example.com/podcast/feed.xml",
+  "audioBaseUrl": "https://example.com/podcast",
+  "image": "https://example.com/podcast/cover-v1.png",
+  "host": { "provider": "r2" },
+  "tts": {
+    "provider": "notebooklm",
+    "format": "deep-dive",
+    "length": "short",
+    "language": "en",
+    "timeout": 1200,
+    "interval": 2,
+    "retry": 2,
+    "instructions": "Create a natural two-host podcast for <your audience>, not an audiobook. Answer the article's central question immediately, then let the hosts clarify and build on each other's points. Stay grounded in the supplied source and do not invent claims."
+  },
+  "wpm": 200,
+  "episode": {
+    "targetWords": [300, 450],
+    "cta": "We're <your company>, <what you do> in <where>. If you want a straight answer about <thing>, visit example.com."
+  }
+}
